@@ -1,0 +1,55 @@
+.git-commands-container{
+    @extend %container;
+}
+
+.git-commands__grid{
+    background: rgb(212, 212, 212);
+}
+
+.git-commands__head{
+    display: flex;
+    justify-content: left;
+    background: white;
+}
+
+.git-commands__head > h1{
+    display: inline-block;
+    font-size: x-large;
+    font-weight: 900;
+    margin: auto 0px;
+}
+
+.git-commands__holder{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.git-commands__card{
+    background: white;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 10px 10px gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.git-commands__card-title{
+    font-weight: 900;
+    text-align: center;
+}
+
+.git-commands__card-subtitle{
+    text-align: center;
+    background: gray;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.git-commands__card .card-body > a::before{
+    content: "<";
+}
+.git-commands__card .card-body > a::after{
+    content: ">";
+}

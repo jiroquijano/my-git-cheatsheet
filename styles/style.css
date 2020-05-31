@@ -1,0 +1,171 @@
+body {
+  text-align: center;
+  background: #b8411d;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#git-logo {
+  padding: 10px;
+  display: inline;
+}
+
+.small-logo {
+  width: 100px;
+}
+
+.footer {
+  background: #9e9e9e;
+  text-align: right;
+  transition: ease-in-out 1000ms;
+}
+.footer a {
+  color: black;
+  font-size: small;
+}
+
+.git-commands-container, .index-container {
+  box-shadow: 0 10px 10px #8c3116;
+  margin: auto;
+}
+
+.navigation {
+  background: black;
+  display: flex;
+  justify-content: left;
+}
+.navigation ul {
+  margin: auto 0;
+  padding: 10px;
+}
+.navigation li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+.navigation li a {
+  color: white;
+}
+
+.current {
+  font-size: larger;
+  font-weight: 700;
+}
+
+@media (max-width: 550px) {
+  .index-container, .git-commands-container {
+    width: 90%;
+  }
+
+  .git-commands__card {
+    width: 50rem;
+  }
+
+  .index__item h5 {
+    font-size: larger;
+  }
+}
+@media (min-width: 551px) {
+  .git-commands-container {
+    width: auto;
+  }
+
+  .index-container {
+    width: 70%;
+  }
+}
+.index__grid {
+  background: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.index__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.index__item {
+  color: white;
+  border: white solid 1px;
+  background-color: black;
+  border-radius: 5px;
+}
+.index__item h5 {
+  color: white;
+  transition: 100ms;
+}
+
+.index__item:hover h5 {
+  letter-spacing: 5px;
+}
+
+.git-commands__grid {
+  background: #d4d4d4;
+}
+
+.git-commands__head {
+  display: flex;
+  justify-content: left;
+  background: white;
+}
+
+.git-commands__head > h1 {
+  display: inline-block;
+  font-size: x-large;
+  font-weight: 900;
+  margin: auto 0px;
+}
+
+.git-commands__holder {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.git-commands__card {
+  background: white;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 10px 10px gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.git-commands__card-title {
+  font-weight: 900;
+  text-align: center;
+}
+
+.git-commands__card-subtitle {
+  text-align: center;
+  background: gray;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.git-commands__card .card-body > a::before {
+  content: "<";
+}
+
+.git-commands__card .card-body > a::after {
+  content: ">";
+}
+
+.requirement__table {
+  width: 70%;
+  margin: auto;
+}
+.requirement__table th, .requirement__table td {
+  border-collapse: collapse;
+  border: solid gray 1px;
+  text-align: center;
+}
+
+.requirement {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

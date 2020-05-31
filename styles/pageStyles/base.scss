@@ -1,0 +1,81 @@
+$red-orange: rgb(184, 65, 29);
+$my-box-shadow: 0 10px 10px darken($red-orange,10%);
+
+body{
+    text-align: center;
+    background:$red-orange;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#git-logo{
+    padding: 10px;
+    display: inline;
+}
+
+.small-logo{
+    width: 100px;
+}
+
+.footer{
+    background: rgb(158, 158, 158);
+    text-align: right;
+    transition: ease-in-out 1000ms;
+    
+    a{
+        color: black;
+        font-size: small;
+    }
+}
+
+%container{
+    box-shadow: $my-box-shadow;
+    margin:auto;
+}
+
+.navigation{
+    background: black;
+    display: flex;
+    justify-content: left;
+    ul{
+        margin: auto 0;
+        padding: 10px;
+    }
+    li{
+        display: inline-block;
+        list-style: none;
+        margin-right: 10px;
+        a{
+            color: white;
+        }
+    }
+}
+
+.current{
+    font-size: larger;
+    font-weight:700;
+}
+
+@media (max-width: 550px){
+    .index-container, .git-commands-container{
+        width: 90%;
+    }
+
+    .git-commands__card{
+        width: 50rem;
+    }
+
+    .index__item h5{
+        font-size: larger;
+    }
+}
+
+@media (min-width: 551px){
+    .git-commands-container{
+        width: auto;
+    }
+    .index-container{
+        width: 70%;
+    }
+}
